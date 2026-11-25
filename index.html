@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lemuel Ajewole | Frontend Developer &amp; Designer</title>
+  <meta name="description" content="Lemuel Ajewole is a frontend developer and designer in Ekiti, Nigeria. Responsive websites for schools and local businesses, built with HTML, CSS and JavaScript. Available for freelance.">
+  <meta name="author" content="Lemuel Ajewole">
+  <meta name="theme-color" content="#060f1a">
+  <link rel="canonical" href="https://ajewolelemuel.vercel.app/">
+
+  <!-- Social previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lemuel Ajewole | Frontend Developer &amp; Designer">
+  <meta property="og:description" content="Responsive websites for schools and local businesses, built with HTML, CSS and JavaScript.">
+  <meta property="og:url" content="https://ajewolelemuel.vercel.app/">
+  <meta property="og:image" content="https://ajewolelemuel.vercel.app/assets/img/og-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Set theme + "js" flag before first paint so there is no flash -->
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
+    <i class="bi bi-list" aria-hidden="true"></i>
+  </button>
+  <div class="scrim" id="scrim"></div>
+
+  <!-- ============ SIDEBAR ============ -->
+  <header class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <a class="avatar" href="#home" aria-label="Lemuel Ajewole, back to top">
+        <img src="assets/img/avatar.webp" alt="Portrait of Lemuel Ajewole" width="120" height="120">
+      </a>
+      <p class="brand">Lemuel Ajewole</p>
+      <p class="brand-sub">Frontend developer</p>
+
+      <ul class="socials">
+        <li><a href="https://github.com/Ajewole-CODER" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/lemuelajewole" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61558314946338" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://wa.me/2349035409282" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a></li>
+        <li><a href="https://x.com/AjewoleLemuel" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="bi bi-twitter-x" aria-hidden="true"></i></a></li>
+        <li><a href="https://t.me/ajewolecoder" target="_blank" rel="noopener" aria-label="Telegram"><i class="bi bi-telegram" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="#home" class="nav-link active" aria-current="true"><i class="bi bi-house" aria-hidden="true"></i><span>Home</span></a></li>
+        <li><a href="#about" class="nav-link"><i class="bi bi-person" aria-hidden="true"></i><span>About</span></a></li>
+        <li><a href="#skills" class="nav-link"><i class="bi bi-braces" aria-hidden="true"></i><span>Skills</span></a></li>
+        <li><a href="#portfolio" class="nav-link"><i class="bi bi-images" aria-hidden="true"></i><span>Portfolio</span></a></li>
+        <li><a href="#services" class="nav-link"><i class="bi bi-hdd-stack" aria-hidden="true"></i><span>Services</span></a></li>
+        <li><a href="#contact" class="nav-link"><i class="bi bi-envelope" aria-hidden="true"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-foot">
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to light theme">
+        <i class="bi bi-sun" aria-hidden="true"></i><span>Light theme</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title" class="hero-title">
+            <span class="line"><span>Lemuel</span></span>
+            <span class="line"><span>Ajewole</span></span>
+          </h1>
+          <p class="hero-lead">Frontend developer and designer. I build fast, responsive websites for schools and businesses.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#portfolio">See my work <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            <a class="btn btn-ghost" href="#contact">Hire me</a>
+          </div>
+        </div>
+
+        <div class="code-window" aria-hidden="true">
+          <div class="code-bar"><i></i><i></i><i></i><span>lemuel.js</span></div>
+<pre><code id="codeOut"><span class="k">const</span> lemuel = {
+  <span class="p">role</span>: <span class="s">"Frontend developer"</span>,
+  <span class="p">stack</span>: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JavaScript"</span>],
+  <span class="p">based</span>: <span class="s">"Ekiti, Nigeria"</span>,
+  <span class="p">freelance</span>: <span class="k">true</span>,
+};
+
+lemuel.<span class="f">buildYourSite</span>();</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-title" data-reveal>
+          <h2 id="about-title">About</h2>
+        </div>
+
+        <div class="about-grid">
+          <figure class="about-photo" data-reveal>
+            <img src="assets/img/about.webp" alt="Lemuel Ajewole in a navy blazer" width="560" height="700" loading="lazy">
+          </figure>
+
+          <div class="about-copy" data-reveal>
+            <h3>Frontend developer from Ekiti, Nigeria</h3>
+            <p>I'm Lemuel, a student at the Federal University of Technology, Akure (FUTA). I turn ideas into clean, responsive websites using HTML, CSS and JavaScript.</p>
+            <p>Most of my work is for schools and businesses that need a professional website that loads quickly on a phone. I'm also learning to build full web apps with Firebase, starting with a school management dashboard.</p>
+
+            <dl class="facts">
+              <div><dt>Based in</dt><dd>Ekiti State, Nigeria</dd></div>
+              <div><dt>Studying</dt><dd>FUTA, Akure</dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:ajewolelemuel@gmail.com">ajewolelemuel@gmail.com</a></dd></div>
+              <div><dt>Freelance</dt><dd><span class="status"><i class="dot" aria-hidden="true"></i>Available for new projects</span></dd></div>
+            </dl>
+
+            <a class="btn btn-primary" href="#contact">Work with me <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section alt" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="section-title" data-reveal>
+          <h2 id="skills-title">Skills</h2>
+          <p>What I work with, sorted by how comfortable I am with it.</p>
+        </div>
+
+        <div class="skill-groups">
+          <div class="skill-group" data-reveal>
+            <h3>Strong</h3>
+            <ul class="chips">
+              <li>HTML</li><li>CSS</li><li>Responsive design</li><li>Git &amp; GitHub</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Learning</h3>
+            <ul class="chips">
+              <li>JavaScript</li><li>Firebase</li><li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Tools</h3>
+            <ul class="chips">
+              <li>VS Code</li><li>GitHub</li><li>Netlify</li><li>Vercel</li><li>Formspree</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section id="portfolio" class="section" aria-labelledby="portfolio-title">
+      <div class="wrap">
+        <div class="section-title" data-reveal>
+          <h2 id="portfolio-title">Portfolio</h2>
+          <p>Websites and web apps I've built. Each one links to its code on GitHub.</p>
+        </div>
+
+        <div class="projects">
+
+          <article class="project" data-reveal>
+            <div class="project-thumb"><img src="assets/img/projects/school-site.svg" alt="Layout sketch of a school website" width="640" height="400" loading="lazy"></div>
+            <div class="project-body">
+              <h3>Muel &amp; Nuel School website</h3>
+              <p>A website for a school in Nigeria: who they are, what they teach and how to reach them. Built to load quickly on a phone.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>Netlify</li></ul>
+              <div class="project-links">
+                <a href="https://github.com/Ajewole-CODER/mns-sch" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                <!-- TODO: add the live link once you are happy with it:-->
+                <a href="https://muelandnuel.netlify.app" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>Live site</a> 
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-thumb"><img src="assets/img/projects/school-dashboard.svg" alt="Layout sketch of a school management dashboard" width="640" height="400" loading="lazy"></div>
+            <div class="project-body">
+              <h3>School management dashboard</h3>
+              <p>A web app for Nursery, Primary and JSS 1&ndash;3: students, classes, attendance, term report cards and fee tracking, with admin and teacher logins.</p>
+              <ul class="tags"><li>JavaScript</li><li>Firebase</li><li>Firestore</li></ul>
+              <div class="project-links">
+                <span class="badge"><i class="dot" aria-hidden="true"></i>In progress</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-thumb"><img src="assets/img/projects/portfolio-client.svg" alt="Layout sketch of a personal portfolio website" width="640" height="400" loading="lazy"></div>
+            <div class="project-body">
+              <h3>Portfolio for Ajayi Sunday</h3>
+              <p>A personal portfolio site with an intro, project showcase and contact section, written in plain HTML, CSS and JavaScript.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Vercel</li></ul>
+              <div class="project-links">
+                <a href="https://github.com/Ajewole-CODER/Ajayi-Sunday" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                <a href="https://ajayisunday.vercel.app" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"
+                  aria-hidden="true"></i>Live site</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-thumb"><img src="assets/img/projects/profile-card.svg" alt="Layout sketch of a profile card" width="640" height="400" loading="lazy"></div>
+            <div class="project-body">
+              <h3>Profile card</h3>
+              <p>A clean, responsive profile card component. A small build that practises layout, spacing and typography.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+              <div class="project-links">
+                <a href="https://github.com/Ajewole-CODER/Profile-card" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                <a href="https://ajewole-coder.github.io/Profile-card/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"
+                aria-hidden="true"></i>Live site</a>
+              </div>
+              
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-thumb"><img src="assets/img/projects/this-portfolio.svg" alt="Layout sketch of this portfolio with a dark sidebar" width="640" height="400" loading="lazy"></div>
+            <div class="project-body">
+              <h3>This portfolio</h3>
+              <p>The site you're on: a sidebar layout with a light and dark theme, a working contact form and no frameworks.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Vercel</li></ul>
+              <div class="project-links">
+                <a href="https://github.com/Ajewole-CODER/My-Website" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                <a href="https://ajewolelemuel.vercel.app" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"
+                  aria-hidden="true"></i>Live site</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="section alt" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-title" data-reveal>
+          <h2 id="services-title">Services</h2>
+          <p>What I can build or fix for you.</p>
+        </div>
+
+        <div class="services">
+          <article class="service" data-reveal>
+            <span class="service-icon"><i class="bi bi-code-slash" aria-hidden="true"></i></span>
+            <h3>Website development</h3>
+            <p>Responsive sites for businesses, schools and personal brands, coded by hand in HTML, CSS and JavaScript and tested on phones first.</p>
+          </article>
+          <article class="service" data-reveal>
+            <span class="service-icon"><i class="bi bi-palette" aria-hidden="true"></i></span>
+            <h3>UI design</h3>
+            <p>Clear layouts, readable type and colours that suit your brand, so visitors know what to do next.</p>
+          </article>
+          <article class="service" data-reveal>
+            <span class="service-icon"><i class="bi bi-tools" aria-hidden="true"></i></span>
+            <h3>Updates and fixes</h3>
+            <p>Content changes, bug fixes, speed improvements and hosting help after your site is live.</p>
+          </article>
+        </div>
+
+        <h3 class="process-title" data-reveal>How a project works</h3>
+        <ol class="process" data-reveal="group">
+          <li><span class="step-no">1</span><h4>Talk</h4><p>We agree on your goals, the pages you need and the budget.</p></li>
+          <li><span class="step-no">2</span><h4>Design</h4><p>You see the look and layout before I build it.</p></li>
+          <li><span class="step-no">3</span><h4>Build</h4><p>I code the site and share progress as it comes together.</p></li>
+          <li><span class="step-no">4</span><h4>Launch</h4><p>I put it online, test it on real phones and hand it over.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="section-title" data-reveal>
+          <h2 id="contact-title">Contact</h2>
+          <p>Have a website in mind? Send a message and I'll reply as soon as I can.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-reveal>
+            <a class="info-card" href="mailto:ajewolelemuel@gmail.com">
+              <i class="bi bi-envelope" aria-hidden="true"></i>
+              <span><strong>Email</strong>ajewolelemuel@gmail.com</span>
+            </a>
+            <a class="info-card" href="https://wa.me/2349035409282" target="_blank" rel="noopener">
+              <i class="bi bi-whatsapp" aria-hidden="true"></i>
+              <span><strong>WhatsApp</strong>+234 903 540 9282</span>
+            </a>
+            <a class="info-card" href="tel:+2349035409282">
+              <i class="bi bi-telephone" aria-hidden="true"></i>
+              <span><strong>Call</strong>+234 903 540 9282</span>
+            </a>
+            <div class="info-card">
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              <span><strong>Location</strong>Ekiti State, Nigeria <br> Akure, Ondo State.</span>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xqapzenl" method="POST" data-reveal>
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit" id="submitBtn"><span class="btn-label">Send message</span> <i class="bi bi-send" aria-hidden="true"></i></button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year">2026</span> Lemuel Ajewole. All rights reserved.</p>
+      <p>Designed and built by <a href="https://github.com/Ajewole-CODER" target="_blank" rel="noopener">Lemuel Ajewole</a></p>
+    </footer>
+  </main>
+
+  <button type="button" class="to-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Layout sketch of a profile card component">
+<rect width="640" height="400" fill="#0b1726"/>
+<rect x="60" y="44" width="520" height="312" rx="14" fill="#112238" stroke="#223a57"/>
+<rect x="60" y="44" width="520" height="34" rx="14" fill="#16304d"/><rect x="60" y="64" width="520" height="14" fill="#16304d"/>
+<circle cx="82" cy="61" r="5" fill="#ff6b6b"/><circle cx="100" cy="61" r="5" fill="#ffd166"/><circle cx="118" cy="61" r="5" fill="#4ade80"/>
+
+<rect x="210" y="94" width="220" height="246" rx="16" fill="#23415f"/><rect x="210" y="94" width="220" height="86" rx="16" fill="#3bb7f0" opacity=".85"/><rect x="210" y="150" width="220" height="30" fill="#3bb7f0" opacity=".85"/>
+<circle cx="320" cy="180" r="40" fill="#112238"/><circle cx="320" cy="180" r="34" fill="#e6edf5"/><circle cx="320" cy="171" r="11" fill="#93a7bc"/><path d="M298 203a22 18 0 0 1 44 0z" fill="#93a7bc"/>
+<rect x="272" y="238" width="96" height="12" rx="6" fill="#e6edf5"/><rect x="262" y="260" width="116" height="8" rx="4" fill="#93a7bc"/>
+<rect x="244" y="290" width="152" height="26" rx="8" fill="#3bb7f0"/>
+
+</svg>
